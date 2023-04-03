@@ -36,5 +36,5 @@ This is a Python script for a Flask web application that performs neural style t
 ## Notes
 1. This script uses the pre-trained VGG19 network provided by TensorFlow Keras.
 2. The load_img() function resizes the images to a maximum dimension of 512 while maintaining the aspect ratio.
-3. The train_step() function performs 10 iterations of optimization per call.
+3. The train_step() function performs 1000 iterations of optimization per call.
 4. The total loss is the sum of the content loss and the style loss multiplied by their respective weights.
