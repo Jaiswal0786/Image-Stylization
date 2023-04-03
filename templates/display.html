@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generated Image</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #FFA07A, #87CEEB, #6A5ACD);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+        }
+
+        h1 {
+            color: #555;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 40px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .small-image {
+            width: 200px;
+            height: auto;
+            box-shadow: 2px 2px 5px #aaa;
+            transition: transform .2s;
+            margin: 20px;
+        }
+
+        .small-image:hover {
+            transform: scale(1.05);
+        }
+
+        .big-image-container {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .big-image-heading {
+            color: #555;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .big-image {
+            width: 600px;
+            height: auto;
+            box-shadow: 2px 2px 5px #aaa;
+            transition: transform .2s;
+            margin-top: 50px;
+        }
+
+        .big-image:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Generated Image</h1>
+    <div class="image-container">
+        <div class="small-image">
+            <h2>Image 1</h2>
+            <img src="{{ url_for('uploaded_file', filename=file1) }}" alt="Image 1" width="200px" height="200px">
+        </div>
+        <div class="small-image">
+            <h2>Image 2</h2>
+            <img src="{{ url_for('uploaded_file', filename=file2) }}" alt="Image 2" width="200px" height="200px">
+        </div>
+    </div>
+    <div class="big-image-container">
+        <h2 class="big-image-heading">New Image</h2>
+        <img class="big-image" src="{{ url_for('uploaded_file', filename=filename) }}" alt="New Image" width="400px" height="200px">
+    </div>
+</body>
+</html>

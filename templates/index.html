@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Uploader</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #FFA07A, #87CEEB, #6A5ACD);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+       }
+
+h1 {
+    color: #292F36; /* set the color of the heading */
+    font-size: 48px; /* set the font size of the heading */
+    text-align: center;
+}
+
+form {
+    width: 50%; /* set the width of the form */
+    margin: 0 auto; /* center the form horizontally */
+    padding: 20px; /* add padding around the form */
+    background-color: #FFFFFF; /* set the background color of the form */
+    border-radius: 10px; /* add rounded corners to the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a shadow effect to the form */
+}
+
+label {
+    display: block; /* display the label as a block element */
+    margin-bottom: 10px; /* add some space below the label */
+    font-size: 18px; /* set the font size of the label */
+    color: #292F36; /* set the color of the label */
+}
+
+input[type="file"] {
+    display: block; /* display the input field as a block element */
+    margin-bottom: 20px; /* add some space below the input field */
+    font-size: 16px; /* set the font size of the input field */
+    color: #292F36; /* set the color of the input field */
+    padding: 10px; /* add some padding around the input field */
+    border: 1px solid #C5C5C5; /* add a border to the input field */
+    border-radius: 5px; /* add rounded corners to the input field */
+}
+
+input[type="submit"] {
+    display: block; /* display the submit button as a block element */
+    margin: 0 auto; /* center the submit button horizontally */
+    font-size: 20px; /* set the font size of the submit button */
+    color: #FFFFFF; /* set the color of the submit button */
+    background-color: #292F36; /* set the background color of the submit button */
+    padding: 10px 20px; /* add padding around the submit button */
+    border: none; /* remove the border from the submit button */
+    border-radius: 5px; /* add rounded corners to the submit button */
+    cursor: pointer; /* change the cursor to a pointer when hovering over the submit button */
+}
+
+input[type="submit"]:hover {
+    background-color: #C5C5C5; /* change the background color of the submit button when hovering over it */
+}
+
+    </style>
+</head>
+<body>
+    <h1>Upload two images</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file1"><br>
+        <input type="file" name="file2"><br>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
